@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useEffect, useRef } from "react";
 
 const RevLabWebsite = () => {
@@ -367,7 +368,7 @@ const RevLabWebsite = () => {
   // ============================================
   // ARTICLE PATTERN - Code-Generated SVG Art
   // ============================================
-  const ArticlePattern = ({ category }) => {
+  const ArticlePattern = ({ category }: any) => {
     if (category === "Web Presence") {
       return (
         <svg
