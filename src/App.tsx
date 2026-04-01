@@ -741,7 +741,7 @@ const RevLabWebsite = () => {
             <div>
               <h4 style={{ fontWeight: 600, marginBottom: '16px', fontSize: '14px' }}>Legal</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                <button onClick={() => setShowPrivacyModal(true)} style={{ background: 'none', border: 'none', color: '#909099', fontSize: '14px', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Privacy Policy</button>
+                <button onClick={() => setShowPrivacyModal(true)} style={{ background: 'none', border: 'none', color: '#909099', fontSize: '14px', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Privacy Notice</button>
                 <button onClick={() => setShowTermsModal(true)} style={{ background: 'none', border: 'none', color: '#909099', fontSize: '14px', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Terms of Service</button>
               </div>
             </div>
@@ -896,69 +896,96 @@ const RevLabWebsite = () => {
         </div>
       )}
 
-      {/* Privacy Modal - UAE PDPL & GDPR Compliant */}
+      {/* Privacy Notice - v3 - 1 April 2026 */}
       {showPrivacyModal && (
         <div style={{ position: 'fixed', inset: 0, zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px', background: 'rgba(0,0,0,0.85)' }}>
           <div style={{ background: '#161619', border: '1px solid #222228', borderRadius: '20px', padding: '32px', maxWidth: '700px', width: '100%', maxHeight: '85vh', overflowY: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-              <h3 style={{ fontSize: '20px', fontWeight: 700 }}>Privacy Policy</h3>
+              <h3 style={{ fontSize: '20px', fontWeight: 700 }}>Privacy Notice</h3>
               <button onClick={() => setShowPrivacyModal(false)} style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#222228', border: 'none', color: '#909099', cursor: 'pointer', fontSize: '16px' }}>✕</button>
             </div>
             <div style={{ fontSize: '13px', color: '#909099', lineHeight: 1.8 }}>
-              <p style={{ color: '#606070', marginBottom: '14px' }}>Effective Date: 4 February 2025 | Last Updated: 30 March 2026</p>
+              <p style={{ color: '#606070', marginBottom: '14px' }}>Effective Date: 1 April 2026 | Website: revlabconsulting.com</p>
+              <p style={{ color: '#606070', marginBottom: '14px' }}>Trade License No. 53983 | IFZA Business Park, Dubai Silicon Oasis, Dubai, UAE</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>1. Introduction & Data Controller</h4>
-              <p>REVLAB CONSULTING - FZCO ("Company", "we", "us", "Data Controller"), a company registered in the IFZA Free Zone, Dubai, UAE (Trade License No. 53983), is committed to protecting your personal data. This policy explains how we collect, process, store, and protect your data in full compliance with UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection (UAE PDPL) and the EU General Data Protection Regulation (GDPR) where applicable.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>1. Introduction and Data Controller</h4>
+              <p>REVLAB CONSULTING - FZCO ("RevLab", "we", "us", or "our") operates revlabconsulting.com, an international corporate, portfolio, and informational website for our digital venture building and consulting activities. This Privacy Notice explains how we collect, use, disclose, store, and otherwise process personal data in connection with the website.</p>
+              <p style={{ marginTop: '10px' }}>This Notice is designed primarily with the UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data in mind and also reflects GDPR-style transparency standards where applicable.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>2. Lawful Basis for Processing</h4>
-              <p>We process personal data only when we have a lawful basis to do so, including: (a) Your explicit consent; (b) Performance of a contract with you; (c) Compliance with legal obligations under UAE law; (d) Legitimate business interests that do not override your fundamental rights. You may withdraw consent at any time by contacting us.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>2. Scope of This Notice</h4>
+              <p>This Notice applies to personal data collected through this website, including contact form submissions, website delivery, browser requests, and related business correspondence. It does not automatically apply to separate software products, venture platforms, mobile apps, beta services, or client engagements operated by RevLab or affiliated ventures, which may have their own terms and privacy notices.</p>
+              <p style={{ marginTop: '10px' }}><strong style={{ color: '#CCC' }}>Geographic Scope & EEA Market Focus:</strong> This website serves as a global digital portfolio and informational hub for our UAE-based venture building and consulting operations. While accessible globally, REVLAB CONSULTING - FZCO does not actively market or direct this website to users in the European Union or the European Economic Area through localized commercial offerings, pricing in local currencies, or localized language support. If our direct commercial footprint changes, we may update this Notice accordingly.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>3. Information We Collect</h4>
-              <p><strong style={{ color: '#CCC' }}>Directly Provided:</strong> Name, email address, and message content submitted via our contact forms. <strong style={{ color: '#CCC' }}>Automatically Collected:</strong> IP address, browser type and version, device information, operating system, referring URLs, pages visited, time and date of access, and cookies (with your consent). We do not collect sensitive personal data (e.g., health, biometric, religious, or political data) unless explicitly required and consented to.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>3. Personal Data We Collect</h4>
+              <p>We may collect the following categories of personal data in connection with the website:</p>
+              <p style={{ marginTop: '10px' }}>• <strong style={{ color: '#CCC' }}>Information you provide directly:</strong> first name, last name, email address, and the contents of your message when you use the contact form.</p>
+              <p>• <strong style={{ color: '#CCC' }}>Correspondence data:</strong> follow-up emails, records of business communications, and any information you voluntarily include in your enquiry.</p>
+              <p>• <strong style={{ color: '#CCC' }}>Technical and usage data:</strong> IP address, browser type and version, operating system, device information, language settings, request timestamps, referrer data, pages accessed, and related delivery, routing, and security logs generated by the website or our service providers.</p>
+              <p>• <strong style={{ color: '#CCC' }}>Preference data:</strong> the website currently stores your consent preference in browser localStorage under a preference key used to remember whether you accepted or declined the cookie banner.</p>
+              <p>• <strong style={{ color: '#CCC' }}>Typography delivery data:</strong> because the website currently loads Google Fonts from Google's servers, your browser may send technical request data, including your IP address, to Google in order to display the fonts and for related security purposes.</p>
+              <p style={{ marginTop: '10px' }}>We do not intentionally request or collect sensitive personal data through this website unless it is voluntarily included by you without our request.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>4. Purpose of Data Processing</h4>
-              <p>Your data is processed solely for: Responding to inquiries and providing requested services; Improving our website, services, and user experience; Sending relevant communications (only with opt-in consent); Analyzing website performance and security monitoring; Complying with UAE legal and regulatory obligations.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>4. Purposes of Processing and Lawful Bases</h4>
+              <p>Depending on the context, we process personal data for the following purposes and on one or more of the following legal bases: your consent, steps requested by you before entering into a contract, our legitimate interests in operating and securing the website and managing business inquiries, and compliance with legal obligations.</p>
+              <div style={{ marginTop: '10px', padding: '12px', background: '#0E0E12', borderRadius: '8px', fontSize: '12px' }}>
+                <p><strong style={{ color: '#CCC' }}>Respond to enquiries:</strong> Name, email, message content → Consent / pre-contractual steps / legitimate interests</p>
+                <p><strong style={{ color: '#CCC' }}>Operate and secure website:</strong> IP, browser, device, routing data → Legitimate interests</p>
+                <p><strong style={{ color: '#CCC' }}>Remember consent preference:</strong> Browser storage → Legitimate interests / compliance</p>
+                <p><strong style={{ color: '#CCC' }}>Legal compliance:</strong> Correspondence, logs, records → Legal obligations / legitimate interests</p>
+                <p><strong style={{ color: '#CCC' }}>Protect rights and systems:</strong> Technical logs, abuse indicators → Legitimate interests</p>
+              </div>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>5. Cookies & Tracking Technologies</h4>
-              <p>We use cookies and similar technologies to enhance functionality and analyze usage. By accepting cookies via our banner, you consent to their use. You may manage or withdraw cookie consent at any time through your browser settings. Essential cookies required for website operation do not require consent.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>5. Cookies, Local Storage, and Similar Technologies</h4>
+              <p>The website currently uses browser localStorage to remember your consent preference for the website banner. The current website code does not intentionally deploy third-party analytics or advertising scripts.</p>
+              <p style={{ marginTop: '10px' }}>However, when the website is loaded or the contact form is submitted, your browser may still communicate with service providers such as our hosting provider, our form-processing provider, and Google Fonts in order to deliver, secure, and present the website. If analytics, advertising technologies, or additional tracking tools are introduced in the future, we will update this Notice and, where required by applicable law, obtain consent before activation.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>6. Data Sharing & Third Parties</h4>
-              <p>We do not sell, rent, or trade your personal data. We may share data with: Trusted service providers (hosting, email delivery, analytics) bound by data processing agreements; Legal authorities when required by UAE law or court order; Professional advisors under confidentiality obligations. All third parties are contractually required to protect your data to standards equivalent to this policy.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>6. Service Providers and Third Parties</h4>
+              <p>We do not sell or rent personal data. We may disclose or make personal data available on a need-to-know basis to the following categories of recipients:</p>
+              <p style={{ marginTop: '10px' }}>• <strong style={{ color: '#CCC' }}>Vercel Inc.</strong>, which hosts and delivers the website and may process traffic, IP address, routing, and related system information to operate and secure the site.</p>
+              <p>• <strong style={{ color: '#CCC' }}>Formspree</strong>, which processes contact form submissions sent through the website endpoint used for business enquiries.</p>
+              <p>• <strong style={{ color: '#CCC' }}>Google</strong>, when Google Fonts is loaded directly from Google's servers to display website typography.</p>
+              <p>• Professional advisers, insurers, auditors, or legal authorities where disclosure is reasonably necessary for legal compliance, protection of rights, dispute handling, or professional support.</p>
+              <p style={{ marginTop: '10px' }}>We may also disclose personal data in connection with a merger, sale of assets, financing, corporate reorganization, or similar transaction, subject to appropriate confidentiality or legal safeguards where applicable.</p>
               
               <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>7. International Data Transfers</h4>
-              <p>As a global business, your data may be transferred to and processed in countries outside the UAE. Such transfers are conducted only where: The destination country provides adequate data protection; We have implemented appropriate safeguards (e.g., Standard Contractual Clauses); Or you have provided explicit consent after being informed of potential risks. We ensure all transfers comply with UAE PDPL Article 22 requirements.</p>
+              <p>Because RevLab operates from the UAE and uses service providers that may process data in multiple jurisdictions, personal data collected through the website may be accessed from or processed outside the country in which it was collected.</p>
+              <p style={{ marginTop: '10px' }}>Where applicable law requires safeguards for cross-border transfers, we rely on appropriate legal mechanisms such as adequacy decisions, contractual safeguards (including Standard Contractual Clauses where applicable), or other lawful transfer tools. You may request further information about relevant safeguards by contacting info@revlabconsulting.com.</p>
               
               <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>8. Data Retention</h4>
-              <p>We retain personal data only for as long as necessary to fulfill the purposes outlined in this policy, or as required by law. Contact form data is retained for up to 3 years unless you request earlier deletion. Analytics data is anonymized or deleted after 26 months. When data is no longer needed, it is securely deleted or anonymized.</p>
+              <p>We retain personal data only for as long as reasonably necessary for the purposes described in this Notice, unless a longer period is required or permitted by law.</p>
+              <p style={{ marginTop: '10px' }}>• Contact form enquiries and related business correspondence are generally retained for up to three (3) years, unless earlier deletion is requested or a longer period is needed for legal, compliance, or dispute-handling reasons.</p>
+              <p>• Browser consent preference data remains in your browser until you clear it or change your preference.</p>
+              <p>• Technical and security logs are retained for periods reasonably necessary for website delivery, fraud prevention, security, troubleshooting, and compliance, including periods determined by our service providers.</p>
+              <p style={{ marginTop: '10px' }}>When personal data is no longer needed, we will delete, anonymize, or otherwise de-identify it where appropriate.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>9. Data Security</h4>
-              <p>We implement appropriate technical and organizational measures to protect your data, including: Encryption of data in transit (SSL/TLS); Secure access controls and authentication; Regular security assessments. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>9. Security</h4>
+              <p>We use reasonable technical and organizational measures appropriate to the website context to protect personal data against unauthorized access, disclosure, alteration, loss, or destruction. These measures may include HTTPS/TLS encryption in transit, access controls, provider-side security safeguards, and reasonable internal access discipline.</p>
+              <p style={{ marginTop: '10px' }}>No method of internet transmission or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>10. Your Data Subject Rights (UAE PDPL & GDPR)</h4>
-              <p>Under UAE PDPL and GDPR, you have the following rights:</p>
-              <p style={{ marginLeft: '12px' }}>• <strong style={{ color: '#CCC' }}>Right to Access (Art. 13 PDPL):</strong> Request confirmation of processing and obtain a copy of your data.<br/>
-              • <strong style={{ color: '#CCC' }}>Right to Rectification (Art. 15 PDPL):</strong> Request correction of inaccurate or incomplete data.<br/>
-              • <strong style={{ color: '#CCC' }}>Right to Erasure (Art. 15 PDPL):</strong> Request deletion of your data ("Right to be Forgotten").<br/>
-              • <strong style={{ color: '#CCC' }}>Right to Data Portability (Art. 14 PDPL):</strong> Receive your data in a structured, machine-readable format.<br/>
-              • <strong style={{ color: '#CCC' }}>Right to Restrict Processing (Art. 16 PDPL):</strong> Request limitation of how we use your data.<br/>
-              • <strong style={{ color: '#CCC' }}>Right to Object (Art. 17 PDPL):</strong> Object to processing, especially for direct marketing.<br/>
-              • <strong style={{ color: '#CCC' }}>Right Against Automated Decisions (Art. 18 PDPL):</strong> Not be subject to decisions based solely on automated processing.<br/>
-              • <strong style={{ color: '#CCC' }}>Right to Withdraw Consent:</strong> Withdraw consent at any time without affecting prior lawful processing.</p>
-              <p>To exercise any of these rights, contact us at info@revlabconsulting.com. We will respond within 30 days.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>10. Your Rights</h4>
+              <p>Depending on your jurisdiction and subject to applicable conditions, limitations, and exemptions, you may have rights to access, correct, delete, restrict, object to, or port certain personal data, as well as to withdraw consent where processing is based on consent.</p>
+              <p style={{ marginTop: '10px' }}>• Access information about whether we process your personal data and request a copy of relevant data.</p>
+              <p>• Request correction of inaccurate or incomplete data.</p>
+              <p>• Request deletion of personal data where there is no overriding legal or legitimate basis to retain it.</p>
+              <p>• Object to certain processing, especially direct marketing or processing based on legitimate interests.</p>
+              <p>• Request portability of data you provided to us where applicable law grants that right.</p>
+              <p>• Withdraw consent at any time where processing is based on consent, without affecting prior lawful processing.</p>
+              <p style={{ marginTop: '10px' }}>You may exercise rights requests by emailing info@revlabconsulting.com. We will respond within the timeframes required by applicable law.</p>
               
               <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>11. Data Breach Notification</h4>
-              <p>In the event of a personal data breach that poses a risk to your rights and freedoms, we will notify the UAE Data Office and affected individuals without undue delay, in accordance with UAE PDPL requirements, providing details of the breach and remedial actions taken.</p>
+              <p>In the event of a personal data breach affecting personal data processed through this website, we will assess the incident promptly and take appropriate containment and remediation steps. Where required by applicable law, we will notify the competent supervisory or regulatory authority and, where applicable, affected individuals within the timeframes and in the manner required by such law.</p>
               
               <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>12. Complaints</h4>
-              <p>If you believe your data protection rights have been violated, you have the right to lodge a complaint with the UAE Data Office (established under Federal Decree-Law No. 44 of 2021) or, for EU residents, your local Data Protection Authority.</p>
+              <p>If you believe your privacy rights have been violated, you may contact us first at info@revlabconsulting.com so that we can try to address the issue. Where applicable law grants that right, you may also lodge a complaint with the competent supervisory or regulatory authority, including the UAE Data Office or the relevant data protection authority in your jurisdiction.</p>
               
               <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>13. Children's Privacy</h4>
-              <p>Our services are not directed at individuals under 18 years of age. We do not knowingly collect personal data from children. If we become aware of such collection, we will delete the data immediately.</p>
+              <p>This website is not directed to children under the age of 18, and we do not knowingly collect personal data from children through the website. If we become aware that such data has been collected unintentionally, we will take reasonable steps to delete it.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>14. Changes to This Policy</h4>
-              <p>We may update this policy periodically. Material changes will be communicated via website notice or email. Continued use of our services after changes constitutes acceptance. We encourage you to review this policy regularly.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>14. Changes to This Notice</h4>
+              <p>We may update this Privacy Notice from time to time to reflect legal, operational, or website changes. The updated version becomes effective when posted, unless a later date is stated.</p>
               
-              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid #222228' }}>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>15. Contact</h4>
+              <div style={{ marginTop: '10px', paddingTop: '16px', borderTop: '1px solid #222228' }}>
                 <p style={{ color: '#FFF', marginBottom: '8px' }}><strong>Data Controller:</strong> REVLAB CONSULTING - FZCO</p>
                 <p style={{ color: '#909099' }}>IFZA Business Park, Dubai Silicon Oasis, Dubai, UAE<br/>Trade License No. 53983<br/>Email: info@revlabconsulting.com</p>
               </div>
@@ -967,7 +994,7 @@ const RevLabWebsite = () => {
         </div>
       )}
 
-      {/* Terms Modal - UAE Law Compliant */}
+      {/* Terms of Service - v3 - 1 April 2026 */}
       {showTermsModal && (
         <div style={{ position: 'fixed', inset: 0, zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px', background: 'rgba(0,0,0,0.85)' }}>
           <div style={{ background: '#161619', border: '1px solid #222228', borderRadius: '20px', padding: '32px', maxWidth: '700px', width: '100%', maxHeight: '85vh', overflowY: 'auto' }}>
@@ -976,54 +1003,72 @@ const RevLabWebsite = () => {
               <button onClick={() => setShowTermsModal(false)} style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#222228', border: 'none', color: '#909099', cursor: 'pointer', fontSize: '16px' }}>✕</button>
             </div>
             <div style={{ fontSize: '13px', color: '#909099', lineHeight: 1.8 }}>
-              <p style={{ color: '#606070', marginBottom: '14px' }}>Effective Date: 4 February 2025 | Last Updated: 30 March 2026</p>
+              <p style={{ color: '#606070', marginBottom: '14px' }}>Effective Date: 1 April 2026 | Website: revlabconsulting.com</p>
+              <p style={{ color: '#606070', marginBottom: '14px' }}>Trade License No. 53983 | IFZA Business Park, Dubai Silicon Oasis, Dubai, UAE</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>1. Acceptance of Terms</h4>
-              <p>By accessing or using this website (revlabconsulting.com), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and all applicable laws and regulations of the United Arab Emirates. If you do not agree to these terms, you must immediately discontinue use of this website.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>1. Acceptance and Scope</h4>
+              <p>These Terms of Service govern your access to and use of revlabconsulting.com and any related website pages, forms, articles, venture portfolio pages, and modal content made available by REVLAB CONSULTING - FZCO ("RevLab", "we", "us", or "our"). By accessing or using the website, you agree to these Terms. If you do not agree, you must discontinue use of the website.</p>
+              <p style={{ marginTop: '10px' }}>These Terms apply to the website only. Separate client engagements, consulting services, venture collaborations, software products, beta programs, or other commercial arrangements may be governed by separate contracts, statements of work, product-specific terms, or privacy notices.</p>
               
               <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>2. Company Information</h4>
-              <p>This website is owned and operated by REVLAB CONSULTING - FZCO, a Free Zone Company registered in IFZA, Dubai, United Arab Emirates (Trade License No. 53983). Registered Address: IFZA Business Park, Dubai Silicon Oasis, Dubai, UAE. Contact: info@revlabconsulting.com.</p>
+              <p>The website is owned and operated by REVLAB CONSULTING - FZCO, Trade License No. 53983, a company registered in the IFZA Free Zone, Dubai, United Arab Emirates. Contact email: info@revlabconsulting.com.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>3. Intellectual Property Rights</h4>
-              <p>All content, materials, source code, graphics, logos, trademarks, trade names (including but not limited to "REVLAB", "REVLAB CONSULTING", "LEBEN", "HAUSBUDDY", "RESIDOVO"), and proprietary information displayed on this website are the exclusive property of REVLAB CONSULTING - FZCO or its licensors, protected under UAE Federal Law No. 36 of 2021 on Trademarks, UAE Federal Law No. 38 of 2021 on Copyrights, and international intellectual property treaties. Unauthorized reproduction, distribution, modification, public display, scraping, or commercial exploitation is strictly prohibited and may result in civil and criminal penalties.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>3. Website Purpose; No Professional Advice; No Offer</h4>
+              <p>This website is an international corporate, portfolio, and informational website for RevLab's digital venture building, software, design, and consulting activities. Website content is provided for general informational purposes only.</p>
+              <p style={{ marginTop: '10px' }}>Nothing on this website constitutes legal, tax, accounting, financial, investment, regulatory, real-estate, insurance, engineering, or other professional advice. Nothing on this website constitutes an offer to sell, a solicitation of an offer to buy, or a recommendation regarding securities, investments, financial products, or other regulated services.</p>
+              <p style={{ marginTop: '10px' }}>Articles, insight pieces, portfolio materials, venture descriptions, forward-looking concepts, and growth or technology commentary may be opinion-based, conceptual, incomplete, or subject to change without notice.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>4. Permitted Use</h4>
-              <p>You are granted a limited, non-exclusive, non-transferable, revocable license to access and use this website for personal, non-commercial informational purposes only. You may not: Use automated systems (bots, scrapers) to access the site; Attempt to gain unauthorized access to any systems or networks; Use the site for any unlawful purpose under UAE law; Interfere with the proper functioning of the website; Copy, reproduce, or distribute content without written permission.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>4. Intellectual Property and Brand Assets</h4>
+              <p>All website content and materials, including text, articles, graphics, visual layouts, source code, compilations, icons, venture descriptions, logos, design elements, and other proprietary materials, are owned by REVLAB CONSULTING - FZCO, its affiliates, or its licensors and are protected by applicable intellectual property and unfair competition laws.</p>
+              <p style={{ marginTop: '10px' }}>The names <strong style={{ color: '#CCC' }}>REVLAB, REVLAB CONSULTING, LEBEN, HAUSBUDDY, RESIDOVO</strong>, and associated brand elements, trade names, logos, and venture identifiers used on this website may constitute trademarks, service marks, trade names, or unregistered brand assets of RevLab, its affiliates, or their respective owners. No right, title, or license is granted except as expressly stated in these Terms.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>5. User Conduct</h4>
-              <p>You agree to use this website in accordance with UAE Federal Decree-Law No. 34 of 2021 on Combatting Rumours and Cybercrimes. You shall not post, transmit, or share any content that is defamatory, obscene, fraudulent, harmful, threatening, or violates any UAE law. Violations may be reported to relevant UAE authorities.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>5. Permitted Use</h4>
+              <p>You may access and use the website solely for lawful, internal business, or personal informational purposes. You may not use the website in any manner that could damage, disable, overburden, impair, or compromise the website, our systems, our providers, or other users.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>6. Disclaimer of Warranties</h4>
-              <p>This website and all content are provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express, implied, or statutory, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. REVLAB CONSULTING - FZCO does not warrant that: The website will be uninterrupted, secure, or error-free; The information is accurate, complete, or current; Any defects will be corrected. Your use of this website is at your sole risk.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>6. Prohibited Conduct and Anti-Scraping Restrictions</h4>
+              <p>You may not:</p>
+              <p style={{ marginTop: '10px' }}>• Use any automated system, bot, spider, crawler, scraper, or similar technology to access, monitor, copy, or extract any portion of the website.</p>
+              <p>• Scrape, extract, or download website content, insight articles, portfolio descriptions, venture concepts, code, layout elements, or datasets for text and data mining, AI training, machine learning, model fine-tuning, benchmarking, or similar purposes.</p>
+              <p>• Attempt to gain unauthorized access to the website, hosting environment, deployment infrastructure, APIs, contact form systems, or connected services.</p>
+              <p>• Upload, transmit, or submit unlawful, defamatory, threatening, obscene, fraudulent, infringing, malicious, or harmful material through the website or contact form.</p>
+              <p>• Reverse engineer, probe, or test the website in a way that interferes with its operation or bypasses technical or access controls.</p>
+              <p>• Use the website in violation of applicable law, including applicable cybercrime, intellectual property, sanctions, competition, or data protection laws.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>7. Limitation of Liability</h4>
-              <p>To the maximum extent permitted by UAE law, REVLAB CONSULTING - FZCO, its directors, officers, employees, agents, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, business opportunities, or goodwill, arising out of or related to your use or inability to use this website, even if advised of the possibility of such damages. In jurisdictions that do not allow the exclusion of certain warranties or limitation of liability, our liability shall be limited to the maximum extent permitted by law.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>7. Third-Party Links and Third-Party Services</h4>
+              <p>The website may reference or link to third-party websites, social media platforms, articles, maps, forms, hosting providers, or other services that are not owned or controlled by RevLab. We are not responsible for the availability, content, policies, or practices of third-party services. Your use of third-party services is at your own risk and subject to their own terms and privacy notices.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>8. Indemnification</h4>
-              <p>You agree to defend, indemnify, and hold harmless REVLAB CONSULTING - FZCO and its officers, directors, employees, agents, and affiliates from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable legal fees) arising from: Your use of the website; Your violation of these Terms; Your violation of any third-party rights; Your violation of any applicable UAE law.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>8. Contact Form and Unsolicited Submissions</h4>
+              <p>If you contact us through the website form, you must provide accurate information and must not submit unlawful content, malware, confidential third-party information without authority, or anything that infringes the rights of others.</p>
+              <p style={{ marginTop: '10px' }}>Except for personal data handled in accordance with our Privacy Notice and except where otherwise agreed in writing, any non-confidential business suggestions, feedback, ideas, or general comments submitted through the website may be reviewed and used by us without obligation or compensation, subject to applicable law.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>9. Third-Party Links & Services</h4>
-              <p>This website may contain links to third-party websites or services not owned or controlled by REVLAB CONSULTING - FZCO. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites. You access third-party links at your own risk and should review their terms and policies.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>9. Disclaimer of Warranties and Website Availability</h4>
+              <p>The website is provided on an "as is" and "as available" basis. To the fullest extent permitted by law, we disclaim all warranties, whether express, implied, statutory, or otherwise, including warranties of accuracy, completeness, merchantability, fitness for a particular purpose, title, non-infringement, and uninterrupted availability.</p>
+              <p style={{ marginTop: '10px' }}>We do not warrant that the website will be error-free, uninterrupted, secure, current, or free from harmful components, or that any identified defect will be corrected.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>10. Modifications to Terms</h4>
-              <p>We reserve the right to modify these Terms at any time at our sole discretion. Material changes will be indicated by updating the "Last Updated" date. Your continued use of the website after any modifications constitutes acceptance of the revised Terms. We encourage you to review these Terms periodically.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>10. Limitation of Liability</h4>
+              <p>To the fullest extent permitted by law, RevLab and its directors, officers, employees, contractors, licensors, and affiliates shall not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or any loss of profits, revenue, opportunity, goodwill, data, or business interruption arising out of or relating to your use of, or inability to use, the website.</p>
+              <p style={{ marginTop: '10px' }}><strong style={{ color: '#CCC' }}>RevLab's aggregate liability arising out of or relating to the website or these Terms shall not exceed AED 500 in total.</strong></p>
+              <p style={{ marginTop: '10px' }}>Nothing in these Terms excludes or limits liability to the extent such liability cannot lawfully be excluded or limited, including liability for fraud, fraudulent misrepresentation, willful misconduct, or any other liability that cannot be excluded under applicable law.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>11. Severability</h4>
-              <p>If any provision of these Terms is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, or if modification is not possible, severed from these Terms. The remaining provisions shall continue in full force and effect.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>11. Indemnity</h4>
+              <p>You agree to defend, indemnify, and hold harmless RevLab and its directors, officers, employees, contractors, licensors, and affiliates from and against claims, losses, liabilities, costs, and expenses (including reasonable legal fees) arising out of or relating to your misuse of the website, your breach of these Terms, your violation of applicable law, or your infringement of any third-party rights.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>12. Entire Agreement</h4>
-              <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and REVLAB CONSULTING - FZCO regarding the use of this website, superseding any prior agreements or communications.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>12. Suspension, Blocking, and Modifications</h4>
+              <p>We may suspend, restrict, modify, or discontinue any part of the website at any time, with or without notice, where reasonably necessary for maintenance, security, abuse prevention, legal compliance, or business reasons.</p>
+              <p style={{ marginTop: '10px' }}>We may revise these Terms from time to time. Updated Terms become effective when posted or otherwise communicated on the website, unless a later effective date is stated.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>13. Force Majeure</h4>
-              <p>REVLAB CONSULTING - FZCO shall not be liable for any failure or delay in performing obligations under these Terms due to circumstances beyond our reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, pandemic, government actions, or failures of third-party services.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>13. Governing Law and Dispute Resolution</h4>
+              <p>These Terms are governed by the laws of the United Arab Emirates as applied in the Emirate of Dubai, without regard to conflict-of-laws principles.</p>
+              <p style={{ marginTop: '10px' }}>Any dispute arising out of or relating to these Terms or the website shall be subject to the exclusive jurisdiction of the Courts of Dubai, UAE. Before initiating formal proceedings, the parties should attempt to resolve the dispute through good-faith discussions.</p>
+              <p style={{ marginTop: '10px' }}>To the extent permitted by applicable law and procedural rules, any proceedings or claims relating to the website or these Terms shall be brought only on an individual basis and not as part of any class, collective, representative, or consolidated action. Nothing in this paragraph limits any right or procedure that cannot lawfully be waived in the applicable forum.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>14. Governing Law & Dispute Resolution</h4>
-              <p>These Terms shall be governed by and construed in accordance with the laws of the United Arab Emirates and the Emirate of Dubai, without regard to conflict of law principles. Any dispute arising out of or relating to these Terms or the use of this website shall be subject to the exclusive jurisdiction of the Courts of Dubai, UAE. The parties agree to attempt good-faith negotiation before initiating formal proceedings.</p>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>14. General Provisions</h4>
+              <p>If any provision of these Terms is held invalid or unenforceable, the remaining provisions shall remain in full force and effect, and the invalid or unenforceable provision shall be interpreted as closely as possible to its original commercial purpose.</p>
+              <p style={{ marginTop: '10px' }}>Our failure to enforce any provision is not a waiver of that provision or of any future right. You may not assign or transfer these Terms without our prior written consent. We may assign these Terms as part of a reorganization, merger, financing, or sale of assets.</p>
+              <p style={{ marginTop: '10px' }}>These Terms, together with any policy expressly incorporated by reference, form the entire agreement between you and RevLab regarding the website.</p>
               
-              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>15. Contact Information</h4>
-              <p>For questions or concerns regarding these Terms, please contact us at info@revlabconsulting.com.</p>
-              
-              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid #222228' }}>
+              <h4 style={{ color: '#FFF', fontWeight: 600, marginTop: '20px', marginBottom: '8px' }}>15. Contact</h4>
+              <div style={{ marginTop: '10px', paddingTop: '16px', borderTop: '1px solid #222228' }}>
                 <p style={{ color: '#FFF', marginBottom: '8px' }}><strong>REVLAB CONSULTING - FZCO</strong></p>
                 <p style={{ color: '#909099' }}>IFZA Business Park, Dubai Silicon Oasis, Dubai, UAE<br/>Trade License No. 53983<br/>Email: info@revlabconsulting.com</p>
               </div>
